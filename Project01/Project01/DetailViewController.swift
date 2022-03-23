@@ -25,7 +25,7 @@ class DetailViewController: UIViewController {
         }
         
         if let position = pos {
-            title = "\(position) of \(pictures.count)"
+            title = "\(position) de \(pictures.count)"
         }
         
     }
