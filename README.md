@@ -6,3 +6,6 @@
 [Project 2 - Guess the Flag Minigame](https://github.com/jvctoor/100-days-of-swift/tree/main/Project02) <br>
 [Project 3 - UIActivityViewController to Share](https://github.com/jvctoor/100-days-of-swift/tree/main/Project03) <br>
 [Project 4 - Web Browser](https://github.com/jvctoor/100-days-of-swift/tree/main/Project04) <br>
+[Project 5 - Word Scramble](https://github.com/jvctoor/100-days-of-swift/tree/main/Project05) <br>
+[Project 6 - Auto Layout](https://github.com/jvctoor/100-days-of-swift/tree/main/Project06) <br>
+[Project 7 - Whitehouse Petitions](https://github.com/jvctoor/100-days-of-swift/tree/main/Project07) <br>
