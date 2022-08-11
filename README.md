@@ -9,3 +9,5 @@
 [Project 5 - Word Scramble](https://github.com/jvctoor/100-days-of-swift/tree/main/Project05) <br>
 [Project 6 - Auto Layout](https://github.com/jvctoor/100-days-of-swift/tree/main/Project06) <br>
 [Project 7 - Whitehouse Petitions](https://github.com/jvctoor/100-days-of-swift/tree/main/Project07) <br>
+[Project 8 - Swifty Words](https://github.com/jvctoor/100-days-of-swift/tree/main/Project08) <br>
+[Project 9 - Grand Central Dispatch](https://github.com/jvctoor/100-days-of-swift/tree/main/Project09) <br>
