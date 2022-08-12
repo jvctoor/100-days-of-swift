@@ -11,3 +11,4 @@
 [Project 7 - Whitehouse Petitions](https://github.com/jvctoor/100-days-of-swift/tree/main/Project07) <br>
 [Project 8 - Swifty Words](https://github.com/jvctoor/100-days-of-swift/tree/main/Project08) <br>
 [Project 9 - Grand Central Dispatch](https://github.com/jvctoor/100-days-of-swift/tree/main/Project09) <br>
+[Project 10 - Person name](https://github.com/jvctoor/100-days-of-swift/tree/main/Project10) <br>
