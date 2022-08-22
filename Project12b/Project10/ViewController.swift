@@ -19,6 +19,15 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: nil, action: #selector(addNewPerson))
         
+        if let savedPeople = UserDefaults.standard.object(forKey: "people") as? Data {
+            do {
+                people = try JSONDecoder().decode([Person].self, from: savedPeople)
+                
+            } catch {
+                print("Failed to load people")
+            }
+        }
+        
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -48,6 +57,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         ac.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak self, weak ac] _ in
             guard let newName = ac?.textFields?[0].text else { return }
             person.name = newName
+            self?.save()
             self?.collectionView.reloadData()
         }))
         
@@ -75,6 +85,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         
         let person = Person(name: "Unknown", image: "imageName")
         people.append(person)
+        save()
         collectionView.reloadData()
         dismiss(animated: true)
     }
@@ -82,6 +93,14 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
     func getDocumentDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0]
+    }
+    
+    func save() {
+        if let savedData = try? JSONEncoder().encode(people) {
+            UserDefaults.standard.set(savedData, forKey: "people")
+        } else {
+            print("Failed to save people")
+        }
     }
     
 }
